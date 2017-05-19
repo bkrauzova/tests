@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://192.168.122.144/" />
+<title>wizard1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">wizard1</td></tr>
+</thead><tbody>
+<!--wizard first login - dns, sms, addr., ntp, tag -->
+<tr>
+	<td>store</td>
+	<td>DC-Roztoky</td>
+	<td>dc</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ntp1.etn.com</td>
+	<td>ntp</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>00420600000000@sms.cz.o2.com</td>
+	<td>sms</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Address 123, Praha</td>
+	<td>address</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>assetTag</td>
+	<td>assetTag</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>11</td>
+	<td>maxPower</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>192.168.122.10</td>
+	<td>dnsPref</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>192.168.122.11</td>
+	<td>dnsAlt</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login-input-username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login-input-password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=login-button-connexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=wizard-passwd-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-input-current</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-input-new</td>
+	<td>nosoup4u!</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-input-repeat</td>
+	<td>nosoup4u!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=wizard-passwd-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=wizard-licence-accept</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=wizard-licence-submit</td>
+	<td></td>
+</tr>
+<!--Network setting-->
+<tr>
+	<td>click</td>
+	<td>id=rb-method-dhcp-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=rb-method-dhcp-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=wizard-cb-dns</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=network-pref-dns</td>
+	<td>${dnsPref}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=network-alt-dns</td>
+	<td>${dnsAlt}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=wizard-network-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-dc-name</td>
+	<td>${dc}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-dc-max-power</td>
+	<td>${maxPower}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-ntp-address</td>
+	<td>${ntp}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[7]</td>
+	<td>${sms}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-dc-asset</td>
+	<td>${assetTag}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=wizard-dc-location</td>
+	<td>${address}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=wizard-licence-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=wizard-licence-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=wizard-licence-submit</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

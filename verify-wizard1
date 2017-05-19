@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://192.168.122.144/" />
+<title>verify-wizard1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">verify-wizard1</td></tr>
+</thead><tbody>
+<!--test of settings performed in wizard1-->
+<tr>
+	<td>store</td>
+	<td>DC-Roztoky</td>
+	<td>dc</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ntp1.etn.com</td>
+	<td>ntp</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>00420600000000@sms.cz.o2.com</td>
+	<td>sms</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Address 123, Praha</td>
+	<td>address</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>assetTag</td>
+	<td>assetTag</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>11</td>
+	<td>maxPower</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>192.168.122.10</td>
+	<td>dns-pref</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>192.168.122.11</td>
+	<td>dns-alt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.icon-cog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=settings-ntp-address</td>
+	<td>${ntp}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=(//input[@type='text'])[9]</td>
+	<td>${sms}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=settings-dc-location</td>
+	<td>${address}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=settings-dc-asset</td>
+	<td>${assetTag}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=settings-dc-max-power</td>
+	<td>${maxPower}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//settings-menu/ul/li[5]</td>
+	<td></td>
+</tr>
+<!--BUG none of the network setting saved-->
+
+</tbody></table>
+</body>
+</html>

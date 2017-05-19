@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="login-first">login-first</a></td></tr>
+<tr><td><a href="login-nosoup4u!">login-nosoup4u!</a></td></tr>
+<tr><td><a href="csv-upload">csv-upload</a></td></tr>
+<tr><td><a href="login-page">login-page</a></td></tr>
+<tr><td><a href="dc-settings">dc-settings</a></td></tr>
+<tr><td><a href="smpt-setting">smtp-setting</a></td></tr>
+<tr><td><a href="ntp-sms">ntp-sms</a></td></tr>
+<tr><td><a href="wizard1">wizard1</a></td></tr>
+<tr><td><a href="verify-wizard1">verify-wizard1</a></td></tr>
+<tr><td><a href="wizard2">wizard2</a></td></tr>
+</tbody></table>
+</body>
+</html>

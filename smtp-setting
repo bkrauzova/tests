@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://192.168.122.144" />
+<title>smtp-setting</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">smtp-setting</td></tr>
+</thead><tbody>
+<!--SMTP setting-->
+<tr>
+	<td>store</td>
+	<td>mail.etn.com</td>
+	<td>server</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>30</td>
+	<td>port</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email.LetsMakeTheEmailVeryLong@etn.com</td>
+	<td>sender</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>user1</td>
+	<td>user</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>password123</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>test@email.com</td>
+	<td>testEmail</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.icon-cog</td>
+	<td></td>
+</tr>
+<!--encryption TODO there are no ids-->
+<tr>
+	<td>type</td>
+	<td>id=settings-smtp-test-email</td>
+	<td>${testEmail}</td>
+</tr>
+<!--enable authentication -->
+<tr>
+	<td>click</td>
+	<td>id=settings-smtp-server-auth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type </td>
+	<td>id=settings-smtp-user</td>
+	<td>${user}</td>
+</tr>
+<tr>
+	<td>type </td>
+	<td>id=settings-smtp-passwd</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=settings-smtp-address</td>
+	<td>${server}</td>
+</tr>
+<!--disable authentication-->
+<tr>
+	<td>click</td>
+	<td>id=settings-smtp-server-auth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=settings-smtp-port</td>
+	<td>${port}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=settings-smtp-sender-address</td>
+	<td>${sender}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=settings-smtp-verify-certificate</td>
+	<td></td>
+</tr>
+<!--Save and test-->
+<tr>
+	<td>click</td>
+	<td>id=settings-network-smtp-test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=settings-network-smtp-test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[4]/div/p</td>
+	<td>- SMTP Successfully Configured</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
